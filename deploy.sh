@@ -2,8 +2,8 @@
 set -e
 set -o pipefail
 
-if [[ "$GITHUB_REF" != "refs/heads/master" ]]; then
-	echo "$GITHUB_REF was not master, exiting..."
+if [[ "$GITHUB_REF" != "refs/heads/deploy-to-s3" ]]; then
+	echo "$GITHUB_REF was not deploy-to-s3, exiting..."
 	exit 0
 fi
 
